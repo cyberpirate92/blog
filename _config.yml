@@ -1,0 +1,38 @@
+# Dependencies
+permalink: pretty
+lsi: false
+safe: true
+# source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Setup
+title:            Ravi On Software
+tagline:          'My Blogs'
+description:      "I'm Ravi Theja, a Software Developer from Hyderabad, India"
+url:              https://ravitheja.dev
+baseurl:          /
+
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
+
+author:
+  name:           'Ravi Teja'
+  url:            https://twitter.com/decodified
+
+paginate:         5
+
+version:          2.1.0
+
+github:
+  repo:           https://github.com/cyberpirate92/cyberpirate92.github.io
+
+plugins: 
+  - jekyll-paginate
+  - jekyll-gist
