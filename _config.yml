@@ -16,7 +16,7 @@ title:            Ravi On Software
 tagline:          'My Blogs'
 description:      "I'm Ravi Theja, a Software Developer from Hyderabad, India"
 url:              https://ravitheja.dev
-baseurl:          /base/
+baseurl:          /blog/
 
 # kramdown:
 #   input: GFM
