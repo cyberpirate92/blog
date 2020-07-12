@@ -21,22 +21,22 @@ A block’s hash is generated using the transaction data, timestamp, previous bl
 For example, let’s say the hashing algorithm used is [SHA-256](https://en.wikipedia.org/wiki/Secure_Hash_Algorithms) (more complex hashing algorithms are used in actual implementations) and assume the following as the block’s data.
 
 <table>
-<tr>
-    <th class="text-right-align"> Transaction Data </th>
-    <td> Hello, World </td>
-</tr>
-<tr>
-    <th class="text-right-align"> Timestamp </th>
-    <td> 1527696247729 </td>
-</tr>
-<tr>
-    <th class="text-right-align">Previous block hash</th>
-    <td>5591ae80713bc6324cae319ddfbdbedd710aabb96a33af80b0732ecd8e42314d</td>
-</tr>
-<tr>
-    <th class="text-right-align">Nonce</th>
-    <td>383212</td>
-</tr>
+  <tr>
+      <th class="text-right-align"> Transaction Data </th>
+      <td> Hello, World </td>
+  </tr>
+  <tr>
+      <th class="text-right-align"> Timestamp </th>
+      <td> 1527696247729 </td>
+  </tr>
+  <tr>
+      <th class="text-right-align">Previous block hash</th>
+      <td>5591ae80713bc6324cae319ddfbdbedd710aabb96a33af80b0732ecd8e42314d</td>
+  </tr>
+  <tr>
+      <th class="text-right-align">Nonce</th>
+      <td>383212</td>
+  </tr>
 </table>
 
 We append the all the values to a string, which looks something like this
