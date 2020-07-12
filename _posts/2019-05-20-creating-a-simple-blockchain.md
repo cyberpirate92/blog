@@ -13,7 +13,7 @@ Okay, let’s break it down to get a better understanding.
 A block contains transaction data, the cryptographic hash of the previous block, the timestamp and a nonce. You must be wondering what a nonce is, It will be explained in detail later, but for now just think of it as a random number.
 
 {:refdef: class="centered-image"}
-![]({{ site.baseurl }}public/images/blockchain-blocks.png)
+![Blocks in a blockchain]({{ 'public/images/blockchain-blocks.png' | relative_url }})
 {: refdef}
 
 A block’s hash is generated using the transaction data, timestamp, previous block’s hash and the nonce as input.
