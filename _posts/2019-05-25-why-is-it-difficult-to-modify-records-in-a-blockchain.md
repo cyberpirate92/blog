@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Why is it difficult to modify records in a blockchain
 ---
 
