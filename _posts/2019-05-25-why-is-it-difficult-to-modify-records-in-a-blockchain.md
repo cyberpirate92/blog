@@ -267,7 +267,7 @@ With the new nonce, the 4th block becomes
 The same happens with the remaining blocks and their nonces should also be recalculated. As we have observed the blockchain is similar in analogy to dominoes where each block can be thought of as a domino.
 
 {:refdef: class="centered-image"}
-![]({{ site.baseurl }}public/images/dominoes-disturbed.gif)
+![]({{ site.baseurl }}/public/images/dominoes-disturbed.gif)
 {: refdef}
 
 once a block is disturbed, all the consecutive blocks also get affected
@@ -282,7 +282,7 @@ There are a few things to consider,
 * For the sake of simplicity, we have used tiny difficulty values and a relatively less complex algorithm, but in actual implementations, the difficulty value is quite huge and also the hashing algorithms are much more complex which makes it much harder and time consuming to recalculate the nonce values.
 
 {:refdef: class="centered-image"}
-![]({{ site.baseurl }}public/images/bitcoin-relative-difficulty.png)
+![]({{ site.baseurl }}/public/images/bitcoin-relative-difficulty.png)
 <small>Graph showing changes in relative difficulty for bitcoin. Source: https://blockchain.info</small>
 {: refdef}
 
