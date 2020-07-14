@@ -20,34 +20,36 @@ A block’s hash is generated using the transaction data, timestamp, previous bl
 
 For example, let’s say the hashing algorithm used is [SHA-256](https://en.wikipedia.org/wiki/Secure_Hash_Algorithms) (more complex hashing algorithms are used in actual implementations) and assume the following as the block’s data.
 
-<table>
-  <tr>
-      <th class="text-right-align"> Transaction Data </th>
-      <td> Hello, World </td>
-  </tr>
-  <tr>
-      <th class="text-right-align"> Timestamp </th>
-      <td> 1527696247729 </td>
-  </tr>
-  <tr>
-      <th class="text-right-align">Previous block hash</th>
-      <td>5591ae80713bc6324cae319ddfbdbedd710aabb96a33af80b0732ecd8e42314d</td>
-  </tr>
-  <tr>
-      <th class="text-right-align">Nonce</th>
-      <td>383212</td>
-  </tr>
-</table>
+<div class="table">
+    <table>
+        <tr>
+            <th class="text-right-align"> Transaction Data </th>
+            <td> Hello, World </td>
+        </tr>
+        <tr>
+            <th class="text-right-align"> Timestamp </th>
+            <td> 1527696247729 </td>
+        </tr>
+        <tr>
+            <th class="text-right-align">Previous block hash</th>
+            <td>5591ae80713bc6324cae319ddfbdbedd710aabb96a33af80b0732ecd8e42314d</td>
+        </tr>
+        <tr>
+            <th class="text-right-align">Nonce</th>
+            <td>383212</td>
+        </tr>
+    </table>
+</div>
 
 We append the all the values to a string, which looks something like this
 
-{% highlight java %}
+{% highlight plaintext %}
 "Hello, World15276962477295591ae80713bc6324cae319ddfbdbedd710aabb96a33af80b0732ecd8e42314d383212"
 {% endhighlight %}
 
 After applying SHA-256 on the above string we’ll get the value (you can experiment with SHA-256 online [here](https://passwordsgenerator.net/sha256-hash-generator/))
 
-{% highlight java %}
+{% highlight plaintext %}
 "4527f3eb2c927118f1da9ae1327862a1b52d998108ce608526b4814ca1a5af50"
 {% endhighlight %}
 
@@ -336,14 +338,14 @@ public static void main(String[] args) {
 
 On a sample run, we get the following output
 
-```
+{% highlight plaintext %}
 Previous Block's hash                                                   Timestamp     Nonce	Transaction Data 
 5FECEB66FFC86F38D952786C6D696C79C2DBC239DD4E91B46729D73A27FB57E9	1527709815253 511316	Hello 
 00000BE462BE07F21AC57939DC46310322F8ACF170B1C16CC03E3DCC431A59BE	1527709815253 1362348	World 
 00000E3D3CFFAEE5E8360EB8E7FF8AB39F270D39BCD5830A8505974632B98DC4	1527709815253 792204	Whatever 
 Is valid chain : true 
 Is valid chain : false
-```
+{% endhighlight %}
 
 Observe the **Nonce** values, for the first block, it took **5,11,316** calls to `getHash()` to find a nonce value that satisfies the difficulty criteria. We have used a difficulty of `5` which is tiny, whereas in actual implementations the difficulty value is much higher and also a much complex hashing algorithm will be used.
 

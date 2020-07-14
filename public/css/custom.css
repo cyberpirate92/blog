@@ -4,7 +4,6 @@
     padding-right: 0.25rem;
 }
 
-.container { max-width: 85%; }
 figure.highlight { margin: 0; margin-bottom: 1rem; }
 .highlight pre { overflow: auto; white-space: pre; word-break: normal; word-wrap: normal; }
 td.red-cell-highlight { background-color: #fea59d; }
@@ -14,6 +13,12 @@ p.centered-image img { display: inline-block; }
 p.centered-image small { color: #6c757d; }
 .text-left-align { text-align: left; }
 .text-right-align { text-align: right; }
+div.table { overflow-x: auto; }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .content { max-width: 75%; }    
+}
 
 .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #ffffff; }
