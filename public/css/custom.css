@@ -48,7 +48,7 @@ img {
     font-size: 15px;
 }
 
-.post-meta .category-link {
+.post-meta .category-link, .post-meta .tag-link {
     margin-left: 0.25rem;
     margin-right: 0.5rem;
     float: right;
@@ -201,7 +201,7 @@ div.table {
     overflow-x: auto; 
 }
 
-.categories {
+.categories, .tags {
     border-top: 1px solid lightgray;
     font-weight: normal;
     font-size: 1.1rem;
@@ -213,7 +213,7 @@ div.table {
     outline: none;
 }
 
-.categories .category-name {
+.categories .category-name, .tags .tag-name {
     font-size: 1.2rem;
     text-decoration: underline;
 }

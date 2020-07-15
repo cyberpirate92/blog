@@ -1,0 +1,24 @@
+---
+layout: page
+permalink: /tags/
+title: Tags
+---
+
+{% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <div id="#{{ t | slugize }}"></div>
+  <details open class="tags">
+    <summary><span class="tag-name">{{ t | downcase }}</span></summary>
+  
+<ul>
+{% for post in posts %}
+  {% if post.tags contains t %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }} &middot; <small class="text-muted">{{ post.date | date: "%B %-d, %Y"  }}</small></a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+</details>
+{% endfor %}

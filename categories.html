@@ -2,6 +2,7 @@
 layout: page
 permalink: /categories/
 title: Categories
+hidden: true
 ---
 
 {% for category in site.categories %}
@@ -11,7 +12,7 @@ title: Categories
     <summary><span class="category-name">{{ category_name }}</span></summary>
     <ul>
         {% for post in site.categories[category_name] %}
-        <li><a href="{{ post.url | relative_url }}">{{post.title}}</a></li>
+        <li><a href="{{ post.url | relative_url }}">{{post.title}}</a> &middot; <small class="text-muted">{{ post.date | date: "%B %-d, %Y" }}</small></li>
         {% endfor %}
     </ul>
 </details>
