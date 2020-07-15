@@ -1,0 +1,27 @@
+<header class="navbar navbar-dark bg-primary navbar-sticky">
+    <div class="offset-md-3 d-none d-md-block"></div>
+    <a class="navbar-brand ml-md-3" href="{{ site.baseurl }}">
+        {{ site.title }}
+    </a>  
+    <ul class="navbar-nav ml-md-auto social-nav">
+        <li class="navbar-item"><a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="https://twitter.com/decodified"><i class="fa fa-twitter"></i></a></li>
+        <li class="navbar-item"><a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="https://linkedin.com/in/theja-bsr"><i class="fa fa-linkedin"></i></a></li>
+        <li class="navbar-item"><a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="https://stackoverflow.com/users/story/2526437"><i class="fa fa-stack-overflow"></i></a></li>
+        <li class="navbar-item"><a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="https://github.com/cyberpirate92"><i class="fa fa-github"></i></a></li>
+        {% comment %}
+        Generate nav links for pages with `layout: page`
+        {% endcomment %}
+        
+        {% assign pages_list = site.pages %}
+        {% for node in pages_list %}
+        {% if node.title != null %}
+        {% if node.layout == "page" %}
+        <li class="navbar-item"><a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2 {% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <div class="offset-md-3 d-none d-md-block"></div>
+</header>
+
+<!-- <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p> -->
