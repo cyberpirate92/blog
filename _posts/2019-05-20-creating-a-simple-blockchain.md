@@ -3,7 +3,6 @@ layout: post
 title: Creating a simple Blockchain
 description: A blockchain, originally block chain, is a continuously growing list of records, called blocks, which are linked and secured using cryptography.
 categories: blockchain java
-toc: true
 ---
 
 <details markdown="1" class="table-of-contents" open>

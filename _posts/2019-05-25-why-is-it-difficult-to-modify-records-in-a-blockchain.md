@@ -3,7 +3,6 @@ layout: post
 title: Why is it difficult to modify records in a blockchain
 categories: blockchain
 description: Blockchain works in a peer to peer network and every new transaction is broadcast to all the nodes so that any one of the nodes could mine it. The process of mining a block involves predicting a nonce value that could satisfy the difficulty level.
-toc: true
 ---
 
 <details markdown="1" class="table-of-contents" open>
