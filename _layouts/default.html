@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-  {% include head.html %}
-
-  <body class="theme-base-08">
-
-    {% include sidebar.html %}
-
-    <div class="content container">
-      {{ content }}
+{% include head.html %}
+<body class="prevent-transitions">
+  {% include topbar.html %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-md-3">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        {{ content }}
+      </div>
     </div>
-
-  </body>
+  </div>
+</body>
 </html>

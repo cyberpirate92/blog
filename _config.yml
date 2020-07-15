@@ -29,5 +29,6 @@ github:
   repo:           https://github.com/cyberpirate92/cyberpirate92.github.io
 
 plugins: 
-  - jekyll-paginate
   - jekyll-gist
+  - jekyll-toc
+  - jekyll-sitemap
