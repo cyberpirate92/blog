@@ -12,12 +12,6 @@ layout: default
           <a class="category-link" href="{{ categorylink | relative_url }}">{{ category }}</a>
         {% endfor %}
       </div>
-      <div class="table-of-contents mt-4 mb-4">
-        <details open>
-          <summary>Table of contents</summary>
-          {% toc %}
-        </details>
-      </div>
       {{ content }}
     </div>
   </div>

@@ -1,10 +1,17 @@
 ---
 layout: post
 title: Creating a simple Blockchain
-description: In this article I explain how to create a simple blockchain and how it works
+description: A blockchain, originally block chain, is a continuously growing list of records, called blocks, which are linked and secured using cryptography.
 categories: blockchain java
 toc: true
 ---
+
+<details markdown="1" class="table-of-contents" open>
+<summary>Table of contents</summary>
+* Table of Contents
+{:toc}
+</details>
+
 The Wikipedia definition of blockchain says
 
 > A blockchain, originally block chain, is a continuously growing list of records, called blocks, which are linked and secured using cryptography.
@@ -25,7 +32,7 @@ For example, let’s say the hashing algorithm used is [SHA-256](https://en.wiki
 
 
 <table class="table table-striped table-responsive">
-    <tr>
+    <tr">
         <th class="text-right-align"> Transaction Data </th>
         <td> Hello, World </td>
     </tr>

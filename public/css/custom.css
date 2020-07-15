@@ -31,8 +31,8 @@ img {
 }
 
 .navbar-brand {
-    font-weight: normal;
-    font-size: 1.25rem;
+    font-weight: bold;
+    font-size: 1.7rem !important;
 }
 
 .post-title, .page-title {
@@ -46,11 +46,12 @@ img {
     border-top: 1.2px solid lightgray;
     color: #5c5c5c;
     font-size: 15px;
-    padding-left: 7.5px;
 }
 
 .post-meta .category-link {
-    
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
+    float: right;
 }
 
 .social-nav {
@@ -110,12 +111,23 @@ blockquote p {
     outline: none;
 }
 
+.table-of-contents ul {
+    list-style: decimal;
+}
+
+.table-of-contents li {
+    margin-top: 0.25rem;
+}
+
 table {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    font-size: 0.85rem;
 }
 
 .table-of-contents {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid lightblue;
     padding: 0.5rem;
     border-radius: 5px
@@ -178,7 +190,7 @@ p.centered-image small {
 }
 
 .post-description {
-    padding-left: 8px;
+
 }
 
 div.table { 

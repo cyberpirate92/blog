@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="posts px-2">
+<div class="posts px-2 mt-4">
   {% for post in paginator.posts %}
   <div class="post py-2">
     <h3 class="post-title">
@@ -15,10 +15,10 @@ title: Home
       <time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date_to_string }}</time>
       {% for category in post.categories %}
           {% assign categorylink = 'categories/' | append:category %}
-          <a class="category-link" href="{{ categorylink | relative_url }}">{{ category }}</a>
+          <a class="category-link" href="{{ categorylink | relative_url }}"> <i class="fa fa-tag"></i> {{ category }}</a>
         {% endfor %}
     </p>
-    <p class="post-description">{{ post.description }}</p>
+    <p class="post-description">{{ post.description }} <a href="{{ post.url | relative_url }}">Read more</a></p>
   </div>
   {% endfor %}
 </div>
