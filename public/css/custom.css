@@ -153,11 +153,15 @@ figure.highlight .code-pil {
 figure.highlight pre {
     margin-bottom: 0;
     margin-top: .5rem;
+    overflow: auto; 
+    white-space: pre; 
+    word-break: normal; 
+    word-wrap: normal
 }
 
 figure.highlight code {
     border: none;
-    word-break: break-all;
+    word-break: normal;
     color: #eee;
 }
 
